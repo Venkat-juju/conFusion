@@ -41,3 +41,19 @@ body {
 #card {
 	margin-top: 10px;
 }
+
+.tab-content {
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 10px;
+}
+
+.nav-link.active {
+	border: none;
+	border-bottom: 2px solid blue !important;
+}
+
+.nav-link:hover {
+	border: none;
+}
