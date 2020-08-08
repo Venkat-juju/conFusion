@@ -31,9 +31,52 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span> Contact Us</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="username">Username </label>
+                                <input type="text" name="username" id="username" placeholder="Username" class="form-control form-control-sm mr-1">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="password">Password</label>
+                                <input type="password" name="password" id="password" class="form-control form-control-sm mr-1" placeholder="Password">
+                            </div>
+                            <div class="form-group col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Rememer me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-row">
+                            <button type="button" data-dismiss="modal" class="btn btn-secondary btn-sm ml-auto" data-toggle="tooltip" title="Close">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
             <div class="container">
@@ -43,14 +86,15 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm-6 row">
-                    <div class="col align-self-center">
+                    <div class="col-12 col-sm align-self-center">
                         <img src="img/logo.png" class="img-fluid">
                     </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <a href="#reservationForm"><button type="button" class="btn btn-warning" Value="Reserve Table">Reserve Table</button></a>
+                    <div class="col-12 col-sm d-flex align-items-center justify-content-center">
+                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true" data-placement="top" title="Or Call us at<br><strong>9876543210</strong>" href="#reservationForm">
+                            Reserve Table
+                        </a>
                     </div>
                 </div>
-                
             </div>
         </div>
     </header>
@@ -205,6 +249,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
 
 </body>
 </html>
