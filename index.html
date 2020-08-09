@@ -204,6 +204,7 @@
                                 <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                             </div>
                         </div>
+                    </div>
                         <ol class="carousel-indicators">
                             <li data-target="#mycarousel" data-slide-to="0"></li>
                             <li data-target="#mycarousel" data-slide-to="1" class="active"></li>
@@ -215,7 +216,14 @@
                         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
-                    </div>
+                        <div id="carouselButtons" class="btn-group" style="z-index: 1;">
+                            <button class="btn btn-danger btn-sm"  id="carousel-pause">
+                                <span class="fa fa-pause"></span>
+                            </button>
+                            <button class="btn btn-danger btn-sm" id="carousel-play">
+                                <span class="fa fa-play"></span>
+                            </button>
+                        </div>
                 </div>
             </div>
         </div>
@@ -367,6 +375,25 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log("before the interval function");
+            $("#mycarousel").carousel({interval: 1000});
+            console.log("after the interval function");
+
+            $("#carousel-pause").click(function() {
+                console.log("before the pause function");
+                $("#mycarousel").carousel('pause');
+                console.log("before the pause function");
+            });
+
+            $("#carousel-play").click(function() {
+                console.log("before the play function");
+                $("#mycarousel").carousel('cycle');
+                console.log("before the play function");
+            });
+        });
+    </script>
 
 </body>
 </html>
