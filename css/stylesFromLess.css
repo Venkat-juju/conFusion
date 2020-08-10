@@ -9,46 +9,38 @@
   border-bottom: 1px ridge;
   min-height: 400px;
 }
-
 .footer {
   background-color: #D1C4E9;
   margin: 0px auto;
   padding: 20px 0px;
 }
-
-.jumbotron {
+.jombotron {
   margin: 0px auto;
   padding: 70px 30px;
   background: #9575CD;
   color: floralwhite;
 }
-
 address {
   font-size: 80%;
   margin: 0px;
   color: #0f0f0f;
 }
-
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0;
 }
-
 .navbar-dark {
   background-color: #512DA8;
 }
-
 .tab-content {
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   padding: 10px;
 }
-
 .carousel {
   background-color: #512DA8;
 }
-
 .carousel .carousel-item {
   height: 300px;
 }
@@ -58,33 +50,8 @@ body {
   top: 0px;
   min-height: 300px;
 }
-
 #carouselButton {
   position: absolute;
-  right: 0px;
   bottom: 0px;
+  right: 0px;
 }
-
-#reservationModal .modal-header {
-  background-color: #512DA8;
-  color: floralwhite;
-}
-#reservationModal .modal-header span {
-  color: floralwhite;
-}
-#reservationModal .modal-body {
-  background-color: #D1C4E9;
-}
-
-#loginModal .modal-header {
-  background-color: #512DA8;
-  color: floralwhite;
-}
-#loginModal .modal-header span {
-  color: floralwhite;
-}
-#loginModal .modal-body {
-  background-color: #D1C4E9;
-}
-
-/*# sourceMappingURL=styles.css.map */
